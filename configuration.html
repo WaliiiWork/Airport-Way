@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome user</title>
+</head>
+
+<body>
+
+    <nav class="main-nav">
+        <div class="container">
+            <!-- Left Menu -->
+            <ul class="nav-menu left-menu">
+                <li><a href="Users.html">USER</a></li>
+                <li><a href="Vehical.html">VEHICALS</a></li>
+                <li><a href="configuration.html">SETTING</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="Images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Right Menu -->
+            <ul class="nav-menu right-menu">
+                <li><a href="payment.html">PAYMENT SETTING</a></li>
+                <li><a href="index.html" class="login-btn">LOG OUT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="mobile-nav">
+        <a href="index.html" class="nav-logo">
+            <img src="Images/logo.png" alt="Logo">
+        </a>
+
+        <ul class="nav-menu left-menu">
+            <li><a href="Users.html">USER</a></li>
+            <li><a href="Vehical.html">VEHICALS</a></li>
+            <li><a href="configuration.html">SETTING</a></li>
+            <li><a href="payment.html">PAYMENT SETTING</a></li>
+            <li><a href="index.html" class="login-btn">LOG OUT</a></li>
+        </ul>
+
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header
+        style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('Images/settings.jpg');  background-position: center; background-size: cover; background-repeat: no-repeat;"
+        class="all-heros">
+        <div class="container">
+            <h1>EMAIL'S & OTHER CONFIGURATION</h1>
+        </div>
+    </header>
+
+    <section class="configuration">
+        <div class="container">
+            <h2 class="form-title">Sending Email Setting</h2>
+            <form class="email-settings-form">
+                <div class="form-group">
+                    <label for="smtp-host">SMTP Host</label>
+                    <input type="text" id="smtp-host" class="form-control" placeholder="smtp.hostinger.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="port">Port</label>
+                    <input type="number" id="port" class="form-control" placeholder="587" required>
+                </div>
+                <div class="form-group">
+                    <label for="username">User Name</label>
+                    <input type="email" id="username" class="form-control" placeholder="info@c4diff.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="form-control" placeholder="Your Password" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="secure-connection" checked>
+                        Enable Secure Connection
+                    </label>
+                </div>
+                <div class="mt-4">
+                    <button type="submit" class="submit-btn">Save Settings</button>
+                </div>
+            </form>
+        </div>
+        <div class="container mt-5">
+            <h2 class="form-title">Other Setting</h2>
+            <form class="email-settings-form">
+                <div class="form-group">
+                    <label for="website-name">Website Name</label>
+                    <input type="text" id="website-name" class="form-control" placeholder="Airport Way" required>
+                </div>
+                <div class="form-group">
+                    <label for="website-address">Website Address</label>
+                    <input type="text" id="website-address" class="form-control" placeholder="www.airportway.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-address">Contact Address</label>
+                    <input type="text" id="contact-address" class="form-control" placeholder="43 Market Street, Sheffield, S21 4EG" required>
+                </div>
+                <div class="form-group">
+                    <label for="receiving-email">Receiving Email</label>
+                    <input type="email" id="receiving-email" class="form-control" placeholder="booking@airportway.co.uk" required>
+                </div>
+                <div class="form-group">
+                    <label for="contact-email">Contact Email</label>
+                    <input type="email" id="contact-email" class="form-control" placeholder="booking@airportway.co.uk" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="form-control" placeholder="07 424 222 333" required>
+                </div>
+                <div class="form-group">
+                    <label for="international-phone">International Phone</label>
+                    <input type="text" id="international-phone" class="form-control" placeholder="07 424 222 333" required>
+                </div>
+                <div class="form-group">
+                    <label for="booking-time-hours">Booking Time Hours</label>
+                    <input type="number" id="booking-time-hours" class="form-control" placeholder="0" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-price" checked>
+                        Enable Price
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="disable-price-message">Disable Price Message</label>
+                    <input type="text" id="disable-price-message" class="form-control" placeholder="Call us to book now" required>
+                </div>
+                <div class="form-group">
+                    <label for="auto-generate-reference">Auto Generate Reference</label>
+                    <input type="text" id="auto-generate-reference" class="form-control" placeholder="TFC" required>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-return-fare" checked>
+                        Enable Return Fare
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-via-point">
+                        Enable Via Point
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-round-fare" checked>
+                        Enable Round Fare
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-mileage-start-fare" checked>
+                        Enable Mileage Start Fare
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-mileage-fix-fare" checked>
+                        Enable Mileage Fix Fare
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-admin-email" checked>
+                        Enable Admin Email
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-agent-email" checked>
+                        Enable Agent Email
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-end-user-email" checked>
+                        Enable End User Email
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-wait-return">
+                        Enable Wait and Return
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-maximum-surcharge-fare" checked>
+                        Enable Maximum Surcharge Fare
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="enable-return-information" checked>
+                        Enable Return Information
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="free-wait-return-time">Free Wait and Return Time (Min)</label>
+                    <input type="number" id="free-wait-return-time" class="form-control" placeholder="5" required>
+                </div>
+                <div class="form-group">
+                    <label for="incremental-wait-return-time">Incremental Wait and Return Time (Min)</label>
+                    <input type="number" id="incremental-wait-return-time" class="form-control" placeholder="30" required>
+                </div>
+                <div class="form-group">
+                    <label for="incremental-wait-return-fare">Incremental Wait and Return Fare</label>
+                    <input type="text" id="incremental-wait-return-fare" class="form-control" placeholder="0.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="wait-return-fare-discount">Wait and Return Fare Discount %</label>
+                    <input type="text" id="wait-return-fare-discount" class="form-control" placeholder="0.00" required>
+                </div>
+                <div class="form-group">
+                    <label for="discount">Discount %</label>
+                    <input type="text" id="discount" class="form-control" placeholder="0.00" required>
+                </div>
+                <button type="submit" class="submit-btn">Save Settings</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-col company-info">
+                    <img src="Images/logo.png" alt="Airport Way" class="footer-logo">
+                    <p>Premium airport transfer services with comfort and style. Your journey begins with us.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61552517851950"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@airportwaytaxi?_t=8rPm7RkI7t3&_r=1"><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="https://www.instagram.com/airportwaytaxi?igsh=MTNwaXN2YXNkYWwycw=="><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Fleets.html">Fleets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Airport Service</a></li>
+                        <li><a href="services.html">Seaport Transfer</a></li>
+                        <li><a href="services.html">Station Transfer</a></li>
+                        <li><a href="services.html">Hotel Transfer</a></li>
+                        <li><a href="services.html">City To City Transfer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col contact-info">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>43 Market Street, Sheffield, S21 4EG</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:07424222333">07 424 222 333</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:booking@airportway.co.uk">booking@airportway.co.uk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2024 Airport Way. All Rights Reserved</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

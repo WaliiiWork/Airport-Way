@@ -8,19 +8,18 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>About</title>
+    <title>Manage Vehicles</title>
 </head>
 
 <body>
+
     <nav class="main-nav">
         <div class="container">
             <!-- Left Menu -->
             <ul class="nav-menu left-menu">
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="services.html">SERVICES</a></li>
-                <li><a href="Fleets.html">FLEETS</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="Users.html">USER</a></li>
+                <li><a href="Vehical.html">VEHICALS</a></li>
+                <li><a href="configuration.html">SETTING</a></li>
             </ul>
 
             <!-- Logo -->
@@ -30,9 +29,8 @@
 
             <!-- Right Menu -->
             <ul class="nav-menu right-menu">
-                <li><a href="tel:+07424222333">+07 424 222 333</a></li>
-                <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
-                <li><a href="Login.html" class="login-btn">LOGIN</a></li>
+                <li><a href="payment.html">PAYMENT SETTING</a></li>
+                <li><a href="index.html" class="login-btn">LOG OUT</a></li>
             </ul>
         </div>
     </nav>
@@ -43,14 +41,11 @@
         </a>
 
         <ul class="nav-menu left-menu">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="Fleets.html">FLEETS</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-            <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
-            <li><a href="tel:+07424222333">+07 424 222 333</a></li>
-            <li><a href="Login.html" class="login-btn">LOGIN</a></li>
+            <li><a href="Users.html">USER</a></li>
+            <li><a href="Vehical.html">VEHICALS</a></li>
+            <li><a href="configuration.html">SETTING</a></li>
+            <li><a href="payment.html">PAYMENT SETTING</a></li>
+            <li><a href="index.html" class="login-btn">LOG OUT</a></li>
         </ul>
 
         <button class="mobile-menu-btn">
@@ -60,44 +55,78 @@
         </button>
     </nav>
 
-    <header style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('Images/about.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat;" class="all-heros">
+    <header
+        style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('Images/vehical.jpg');  background-position: center; background-size: cover; background-repeat: no-repeat;"
+        class="all-heros">
         <div class="container">
-            <h1>ABOUT US</h1>
+            <h1>VEHICAL LIST</h1>
         </div>
     </header>
 
-    <section class="about-section">
+    <section class="vehical">
         <div class="container">
-            <div class="about-content">
-                <h1>About <span>Us</span></h1>
-                <p>Airport Way offers reliable airport taxi services connecting Sheffield to major airports. We ensure a
-                    smooth and stress-free journey, whether you're departing or arriving. For bookings, email
-                    booking@airportway.co.uk or call 01246 388 666. Your journey is our commitment.</p>
-                <button>Book Now</button>
+            <p class="table-description"><b>Standard Vehicle</b> is default vehicle so you can't delete this record.</p>
+            <div class="w-100 mb-4 d-flex justify-content-end align-content-center">
+                <button onclick="window.location.href='create-vehical.html'" class="create-vehicle-btn">Create New Vehicle</button>
             </div>
-            <div class="about-image">
-                <img src="Images/lemo.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <section class="testimonials-section">
-        <div class="container">
-            <h2>What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <p>"The service was exceptional! I highly recommend Airport Way for all your travel needs."</p>
-                    <h4>- John Doe</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>"A smooth and stress-free experience from start to finish. Will definitely use again!"</p>
-                    <h4>- Jane Smith</h4>
-                </div>
-                <div class="testimonial-card">
-                    <p>"Professional drivers and comfortable rides. Thank you for making my journey enjoyable!"</p>
-                    <h4>- Mark Johnson</h4>
-                </div>
-            </div>
+            <table class="vehicle-table">
+                <thead>
+                    <tr>
+                        <th>Sort</th>
+                        <th>Name</th>
+                        <th>Passengers</th>
+                        <th>Luggages</th>
+                        <th>Hand Luggages</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>STANDARD VEHICLE</td>
+                        <td>3</td>
+                        <td>2</td>
+                        <td>0</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="delete-btn" disabled><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>7 SEATER S MINIBUS</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>16 SEATER MINIBUS</td>
+                        <td>16</td>
+                        <td>16</td>
+                        <td>0</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>EXECUTIVE MPV</td>
+                        <td>7</td>
+                        <td>7</td>
+                        <td>0</td>
+                        <td>
+                            <button class="edit-btn"><i class="fa-solid fa-pen-to-square"></i></button>
+                            <button class="delete-btn"><i class="fa-solid fa-trash"></i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </section>
 
@@ -179,6 +208,9 @@
 
     <!-- SCRIPTS -->
     <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

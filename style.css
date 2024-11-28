@@ -2499,3 +2499,515 @@ body {
         font-size: 0.85rem;
     }
 }
+
+/* LOGIN PAGE STYLING */
+
+.login{
+    margin: 4rem 0;
+    width: 100%;
+    height: 100%;
+}
+
+.login-form {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.login-form h2 {
+    color: var(--color-dark-blue);
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--color-gray);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--color-gold);
+    outline: none;
+}
+
+.submit-btn {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* WELCOME PAGE STYLING */
+
+.welcome {
+    padding: 80px 0;
+    background-color: var(--color-white);
+    text-align: center;
+}
+
+.welcome-message {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.welcome-message h1 {
+    color: var(--color-dark-blue);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-message p {
+    color: var(--color-gray);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.welcome-message img{
+    width: 100%;
+}
+
+.explore-btn {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    padding: 0.8rem 2rem;
+    margin-top: 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.explore-btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .welcome-message h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-message p {
+        font-size: 1rem;
+    }
+
+    .explore-btn {
+        padding: 0.6rem 1.5rem;
+    }
+}
+
+/* VEHICAL STYLING */
+
+.vehical{
+    background-color: #fdfcfc;
+}
+
+.vehical,
+.vehicle-table {
+    padding: 4rem 0;
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-title {
+    color: var(--color-dark-blue);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.table-description {
+    color: var(--color-black);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.vehicle-table th,
+.vehicle-table td {
+    padding: 4px 8px;
+    text-align: left;
+    border: 1px solid var(--color-gray);
+}
+
+.vehicle-table th {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.vehicle-table tbody tr:nth-child(even) {
+    background-color: rgba(215, 182, 93, 0.1);
+}
+
+.vehicle-table tbody tr:hover {
+    background-color: rgba(215, 182, 93, 0.2);
+}
+
+.create-vehicle-btn{
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn,
+.delete-btn {
+    background-color: var(--color-gold);
+    color: var(--color-white);
+    font-size: 0.8rem;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.create-vehicle-btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+@media (max-width: 768px) {
+    .vehicle-table th,
+    .vehicle-table td {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+        display: block;
+        text-align: right;
+    }
+
+    .vehicle-table th {
+        text-align: left;
+    }
+
+    .vehicle-table tr {
+        margin-bottom: 1rem;
+        display: block;
+        border: 1px solid var(--color-gray);
+        border-radius: 5px;
+    }
+
+    .vehicle-table td {
+        text-align: left;
+        position: relative;
+    }
+
+    .vehicle-table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+}
+
+
+/* CONFIGURATION STYLING */
+
+.configuration {
+    padding: 80px 0;
+    background-color: #fdfcfc;
+}
+
+.form-title {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.email-settings-form {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: var(--color-dark-blue);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-gold);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-dark-blue);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--color-black);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-gold);
+}
+
+.submit-btn {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* width: 100%; */
+}
+
+.submit-btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.form-group label {
+    display: flex;
+    align-items: center;
+    color: var(--color-dark-blue);
+    font-weight: 600;
+}
+
+.form-group input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--color-gold);
+    cursor: pointer;
+}
+
+/* PAYMENT STYLING */
+
+.payment {
+    padding: 60px 0;
+    background-color: #fdfcfc;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-dark-blue);
+    margin-bottom: 40px;
+}
+
+.payment-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.payment-method {
+    background: var(--color-white);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-method h3 {
+    color: var(--color-dark-blue);
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: flex;
+    color: var(--color-dark-blue);
+    margin-bottom: 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid var(--color-gray);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: var(--color-gold);
+    outline: none;
+}
+
+.update-btn {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.update-btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .payment-methods {
+        flex-direction: column;
+    }
+}
+
+/* CREATE VEHICLE */
+
+.register-vehicle {
+    padding: 60px 0;
+    background-color: var(--color-white);
+}
+
+.form-title {
+    color: var(--color-black);
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.vehicle-form {
+    /* max-width: 600px; */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: flex;
+    /* display: block; */
+    color: var(--color-dark-blue);
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color-gold);
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-dark-blue);
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--color-black);
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-gold);
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.cancel-btn,
+.submit-btn {
+    background-color: var(--color-gold);
+    color: var(--color-black);
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-btn{
+    background-color: transparent;
+    color: var(--color-black);
+}
+
+
+.submit-btn:hover {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .vehicle-form {
+        padding: 1rem;
+    }
+
+    .form-title {
+        font-size: 2rem;
+    }
+}
