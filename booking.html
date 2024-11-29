@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>AIRPORT WAY</title>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div class="container">
+            <!-- Left Menu -->
+            <ul class="nav-menu left-menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="Fleets.html">FLEETS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+
+            <!-- Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="Images/logo.png" alt="Logo">
+            </a>
+
+            <!-- Right Menu -->
+            <ul class="nav-menu right-menu">
+                <li><a href="tel:+07424222333">+07 424 222 333</a></li>
+                <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
+                <li><a href="#" class="login-btn">LOGIN</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav class="mobile-nav">
+        <a href="index.html" class="nav-logo">
+            <img src="Images/logo.png" alt="Logo">
+        </a>
+
+        <ul class="nav-menu left-menu">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="Fleets.html">FLEETS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="terms-and-conditions.html">Terms & Condition</a></li>
+            <li><a href="tel:+07424222333">+07 424 222 333</a></li>
+            <li><a href="#" class="login-btn">LOGIN</a></li>
+        </ul>
+
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+
+    <header
+        style="background: linear-gradient(135deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url('Images/rolls-royce.png');  background-position: center; background-size: cover; background-repeat: no-repeat;"
+        class="all-heros">
+        <div class="container">
+            <h1>BOOKING FORM</h1>
+        </div>
+    </header>
+
+
+    <section class="booking py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="border border-primary-gold">
+                        <div class="row g-0">
+                            <!-- One Way Section -->
+                            <div class="col-md-6 border-end border-primary-gold">
+                                <h4 class="bg-primary-gold text-center py-2">One Way Information</h4>
+                                <form class="p-4">
+                                    <div class="mb-2">
+                                        <label for="pickupAddress" class="form-label text-primary-gold">Pick Up From [Address]</label>
+                                        <input type="text" class="form-control" id="pickupAddress" 
+                                               placeholder="HETROS FINE ART 417 HONEYPOT LN STANMORE HA7 1JJ" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="pickupNotes" class="form-label">Pickup Notes</label>
+                                        <input type="text" class="form-control" id="pickupNotes" placeholder="Optional">
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="dropoffAddress" class="form-label text-primary-gold">Drop Off [Address]</label>
+                                        <input type="text" class="form-control" id="dropoffAddress" 
+                                               placeholder="LAL AINSDALE ROAD WATFORD WD19 7DN" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="pickupDate" class="form-label">*Pick Up Date</label>
+                                        <input type="date" class="form-control" id="pickupDate" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label class="form-label">*Pick Up Time</label>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <select class="form-select" id="pickupHour" required>
+                                                    <option value="">Hour</option>
+                                                    <option value="00">00</option>
+                                                    <option value="01">01</option>
+                                                    <!-- Add all hours 00-23 -->
+                                                    <option value="23">23</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <select class="form-select" id="pickupMinute" required>
+                                                    <option value="">Minute</option>
+                                                    <option value="00">00</option>
+                                                    <option value="15">15</option>
+                                                    <option value="30">30</option>
+                                                    <option value="45">45</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="card mb-2 border-primary-gold">
+                                        <div class="card-body">
+                                            <h5 class="card-title text-primary-gold">Vehicle</h5>
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <strong>Vehicle Type:</strong> Standard Vehicle
+                                                </div>
+                                                <div>
+                                                    <strong>Fare:</strong> £ 46.00
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <button type="submit" class="btn btn-primary-gold w-100">Book Now</button>
+                                </form>
+                                <div class="w-100 d-flex justify-content-center align-items-center mt-2">
+                                    <img class="w-100" src="Images/fleet-1.png" alt="">
+                                </div>
+                            </div>
+                            
+                            <!-- Return Section -->
+                            <div class="col-md-6">
+                                <h4 class="bg-primary-gold text-center py-2">Return Information</h4>
+                                <form class="p-4">
+                                    <div class="mb-2">
+                                        <label for="returnPickupAddress" class="form-label text-primary-gold">Return Pick Up From [Address]</label>
+                                        <input type="text" class="form-control" id="returnPickupAddress" 
+                                               placeholder="LAL AINSDALE ROAD WATFORD WD19 7DN" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="returnPickupNotes" class="form-label">Pickup Notes</label>
+                                        <input type="text" class="form-control" id="returnPickupNotes" placeholder="Optional">
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="returnDropoffAddress" class="form-label text-primary-gold">Return Drop Off [Address]</label>
+                                        <input type="text" class="form-control" id="returnDropoffAddress" 
+                                               placeholder="HETROS FINE ART 417 HONEYPOT LN STANMORE HA7 1JJ" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="returnDate" class="form-label">*Return Date</label>
+                                        <input type="date" class="form-control" id="returnDate" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label class="form-label">*Return Time</label>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <select class="form-select" id="returnHour" required>
+                                                    <option value="">Hour</option>
+                                                    <option value="00">00</option>
+                                                    <option value="01">01</option>
+                                                    <!-- Add all hours 00-23 -->
+                                                    <option value="23">23</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-6">
+                                                <select class="form-select" id="returnMinute" required>
+                                                    <option value="">Minute</option>
+                                                    <option value="00">00</option>
+                                                    <option value="15">15</option>
+                                                    <option value="30">30</option>
+                                                    <option value="45">45</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4 mb-1 text-center">
+                                        <h4 class="passenger-heading">Passenger Details</h4>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="passengerName" class="form-label">*Name</label>
+                                        <input type="text" class="form-control" id="passengerName" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="passengerEmail" class="form-label">*Email Address</label>
+                                        <input type="email" class="form-control" id="passengerEmail" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="passengerMobile" class="form-label">*Mobile Number</label>
+                                        <input type="tel" class="form-control" id="passengerMobile" required>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="passengerPhone" class="form-label">Phone Number</label>
+                                        <input type="tel" class="form-control" id="passengerPhone">
+                                    </div>
+                                    
+                                    <div class="row mb-2">
+                                        <div class="col-4">
+                                            <label for="passengers" class="form-label">Passengers:</label>
+                                            <select class="form-select" id="passengers" required>
+                                                <option value="">Select</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="luggage" class="form-label">Luggages:</label>
+                                            <select class="form-select" id="luggage" required>
+                                                <option value="">Select</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-4">
+                                            <label for="handLuggage" class="form-label">Hand Luggage:</label>
+                                            <select class="form-select" id="handLuggage" required>
+                                                <option value="">Select</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mb-2">
+                                        <label for="additionalNotes" class="form-label">Additional Notes</label>
+                                        <textarea class="form-control" id="additionalNotes" placeholder="Optional"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary-gold w-100">Book Now</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-type">
+                <h2 class="payment-title">Payment Type:</h2>
+                <div class="payment-options">
+                    <label>
+                        <input type="radio" name="payment" value="cash" checked>
+                        Cash
+                    </label>
+                    <label>
+                        <input type="radio" name="payment" value="debit-credit">
+                        Debit/Credit Card
+                    </label>
+                </div>
+                <div class="payment-methods">
+                    <h3 class="payment-method-title">Cash Payment</h3>
+                    <div class="payment-icons">
+                        <img src="Images/cards.png" alt="Visa">
+                    </div>
+                </div>
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I accept the <a href="terms-and-conditions.html">Terms & Conditions</a></label>
+                </div>
+                <button class="btn btn-primary-gold">Next</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Company Info -->
+                <div class="footer-col company-info">
+                    <img src="Images/logo.png" alt="Airport Way" class="footer-logo">
+                    <p>Premium airport transfer services with comfort and style. Your journey begins with us.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/profile.php?id=61552517851950"><i
+                                class="bi bi-facebook"></i></a>
+                        <a href="https://www.tiktok.com/@airportwaytaxi?_t=8rPm7RkI7t3&_r=1"><i
+                                class="bi bi-tiktok"></i></a>
+                        <a href="https://www.instagram.com/airportwaytaxi?igsh=MTNwaXN2YXNkYWwycw=="><i
+                                class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Fleets.html">Fleets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="services.html">Airport Service</a></li>
+                        <li><a href="services.html">Seaport Transfer</a></li>
+                        <li><a href="services.html">Station Transfer</a></li>
+                        <li><a href="services.html">Hotel Transfer</a></li>
+                        <li><a href="services.html">City To City Transfer</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="footer-col contact-info">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>
+                            <i class="bi bi-geo-alt-fill"></i>
+                            <span>43 Market Street, Sheffield, S21 4EG</span>
+                        </li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a href="tel:07424222333">07 424 222 333</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="mailto:booking@airportway.co.uk">booking@airportway.co.uk</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <div class="copyright">
+                    <p>© 2024 Airport Way. All Rights Reserved</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
